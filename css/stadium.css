@@ -1,0 +1,119 @@
+nav {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    height: 100px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.top-section {
+    display: flex;
+    flex: 2; 
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; 
+    background-color: #132257; 
+}
+
+.team-logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    font-weight: bold; 
+    font-size: x-large; 
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #132257;
+}
+
+
+.team-name {
+    color: #132257; 
+    font-weight: bold; 
+    font-size: xx-large; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+footer {
+    text-align: center; 
+    padding:20px 0; 
+    background-color: #132257; 
+    color: white; 
+
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+
+body {
+    padding-top: 120px; 
+
+}
+
+
+/* content */
+.content {
+
+    width: 80%;
+    margin: 0 auto; /* 水平居中 */
+    margin-bottom: 20px; /* 在容器下方留出空间 */
+}
+/* main title */
+.main-title {
+    text-align: center; /* 标题居中 */
+    font-size: 4em; /* 较大的字体大小 */
+    margin-bottom: 20px; /* 在标题下方留出空间 */
+    /* 可以添加更多样式，如字体颜色等 */
+    color:darkblue;
+}
+
+.subtitle {
+    text-align: center; /* 子标题居中 */
+    font-size: 2.5em; /* 字体大小调整 */
+    color: darkgreen; /* 子标题颜色 */
+    margin-top: 30px; /* 在子标题上方留出空间 */
+    margin-bottom: 20px; /* 在子标题下方留出空间 */
+}
+
+.history-image {
+    width: 100%; /* 图片宽度调整为100% */
+    max-width: 600px; /* 最大宽度，根据需要调整 */
+    display: block; /* 块级元素 */
+    margin: 20px auto; /* 上下留出空间并居中 */
+}
+
+p {
+    text-align: justify; /* 段落两端对齐 */
+    line-height: 1.6; /* 行高增加可读性 */
+    margin-bottom: 20px; /* 在段落下方留出空间 */
+    font-size: 1.5em; /* 稍微增加段落文字的大小 */
+}
+
+/* bg */
+body {
+    background: url('images/simplebackground.jpg') center center / cover no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+

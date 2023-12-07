@@ -1,0 +1,142 @@
+nav {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    height: 100px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.top-section {
+    display: flex;
+    flex: 2; 
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; 
+    background-color: #132257; 
+}
+
+.team-logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    font-weight: bold; 
+    font-size: x-large; 
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #132257;
+}
+
+
+.team-name {
+    color: #132257; 
+    font-weight: bold; 
+    font-size: xx-large; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+footer {
+    text-align: center; 
+    padding:20px 0; 
+    background-color: #132257; 
+    color: white; 
+
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+
+body {
+    padding-top: 120px; 
+
+}
+
+
+
+/* content */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 9列 */
+    grid-template-rows: repeat(7, 1fr); /* 7行 */
+    width: 90%;
+    margin: 0 auto; /* 居中 */
+    background-color: lightgreen;
+    background-size: cover;
+    background-position: center;
+    gap: 10px; /* 调整间隙 */
+    border: 5px solid black;
+
+    background: linear-gradient(to right, #a1c4fd, lightgreen);
+}
+
+.grid-item {
+    width: 100%; /* 图片填满网格单元 */
+    height: auto;
+    border: 5px solid rgb(43, 44, 39); /* 加粗的橙色边框 */
+    box-sizing: border-box; /* 确保边框包含在宽度内 */
+    position: relative;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    transform: scale(1.05); /* 轻微放大 */
+}
+.player-info {
+    text-align: center; /* 文本居中 */
+    padding: 0; /* 移除内边距 */
+    position: absolute; /* 绝对定位 */
+    bottom: 5px; /* 距离底部的距离，根据需要调整 */
+    left: 0;
+    width: 100%; /* 宽度与父容器一致 */
+}
+
+.player-info p {
+    margin: 0;
+    font-size: 1em; /* 调整字体大小 */
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+
+
+}
+
+
+[data-position="Captain"] .player-info p:nth-child(2) {
+    color: red; /* 可以使用其他颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+/* 定位图片到特定的网格位置 */
+.center { grid-area: 2 / 5 / 3 / 6; }
+.row3-col3 { grid-area: 3 / 3 / 4 / 4; }
+.row3-col5 { grid-area: 3 / 5 / 4 / 6; }
+.row3-col7 { grid-area: 3 / 7 / 4 / 8; }
+.row4-col4 { grid-area: 4 / 4 / 5 / 5; }
+.row4-col6 { grid-area: 4 / 6 / 5 / 7; }
+.row5-col2 { grid-area: 5 / 2 / 6 / 3; }
+.row5-col4 { grid-area: 5 / 4 / 6 / 5; }
+.row5-col6 { grid-area: 5 / 6 / 6 / 7; }
+.row5-col8 { grid-area: 5 / 8 / 6 / 9; }
+.row6-col5 { grid-area: 6 / 5 / 7 / 6; }
+

@@ -1,0 +1,160 @@
+nav {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    height: 100px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.top-section {
+    display: flex;
+    flex: 2; 
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; 
+    background-color: #132257; 
+}
+
+.team-logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px;
+    font-weight: bold; 
+    font-size: x-large; 
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #132257;
+}
+
+
+.team-name {
+    color: #132257; 
+    font-weight: bold; 
+    font-size: xx-large; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+footer {
+    text-align: center; 
+    padding:20px 0; 
+    background-color: #132257; 
+    color: white; 
+
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+
+body {
+    padding-top: 120px; 
+
+}
+
+
+
+
+/* video part */
+.video-container {
+    width: 80%;
+    margin: 0 auto; /* 水平居中 */
+    display: flex;
+    justify-content: center; /* 确保视频在容器内居中 */
+}
+
+video {
+    width: 100%; /* 视频宽度填满容器 */
+    height: auto; /* 高度自动调整 */
+}
+
+.text-container {
+
+    width: 80%;
+    margin: 0 auto; /* 水平居中 */
+    margin-bottom: 20px; /* 在容器下方留出空间 */
+}
+
+
+.text-container p {
+    font-size: 2em; /* 设置字体大小 */
+    margin-bottom: 15px; /* 在段落之间留出空间 */
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bold;
+}
+
+.image-container {
+    text-align: center; /* 图片居中 */
+    margin: 20px 0; /* 在图片容器上下方保持一定距离 */
+}
+
+.image-container img {
+    width: auto; /* 或您希望的特定宽度 */
+    height: auto; /* 图片高度自动调整 */
+    max-width: 100%; /* 确保图片不超过容器宽度 */
+}
+/* main title */
+.main-title {
+    text-align: center; /* 标题居中 */
+    font-size: 4em; /* 较大的字体大小 */
+    margin-bottom: 20px; /* 在标题下方留出空间 */
+    /* 可以添加更多样式，如字体颜色等 */
+    color:darkblue;
+}
+
+
+/* motto */
+.motto {
+    text-align: center; /* 居中对齐 */
+    font-size: 3em; /* 比主标题小的字体大小 */
+    margin-bottom: 20px; /* 在段落下方留出空间 */
+    /* 可以添加更多样式，如字体风格等 */
+}
+
+
+
+/* bg */
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* 您选择的字体 */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/simplebackground.jpg') center center / cover no-repeat;
+    opacity: 0.8; /* 调整背景图片的透明度 */
+    z-index: -1;
+}
+
+.container, .text-container, .video-container {
+    position: relative;
+    z-index: 1; /* 确保内容在背景之上 */
+    /* ...其他样式... */
+}
